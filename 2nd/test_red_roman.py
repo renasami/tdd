@@ -34,6 +34,10 @@ class TestRomanConverter(unittest.TestCase):
             to_roman(0)
         self.assertEqual('There is no Roman numeral for ZERO', str(context.exception)) 
 
-
+    def test_10(self):
+        with self.assertRaises(ValueError) as context:
+            to_roman(10)
+        self.assertEqual('Input must be between 1 and 9', str(context.exception)) 
+        
 if __name__ == "__main__":
     unittest.main()
