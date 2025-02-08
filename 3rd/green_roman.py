@@ -92,3 +92,7 @@ def to_roman(num: int) -> str:
 
     return result
 
+
+
+if __name__ == '__main__':
+    print(to_roman(int(input("数値を入力して："))))

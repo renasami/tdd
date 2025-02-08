@@ -26,3 +26,7 @@ def to_roman(num: int) -> str:
         tens[(num % 100) // 10] +
         ones[num % 10]
     )
+
+
+if __name__ == '__main__':
+    print(to_roman(int(input("数値を入力して："))))

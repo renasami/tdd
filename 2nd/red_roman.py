@@ -19,3 +19,8 @@ def to_roman(n: int) -> str:
         return "VIII"
     if n == 9:
         return "IX"
+
+
+
+if __name__ == '__main__':
+    print(to_roman(int(input("数値を入力して："))))

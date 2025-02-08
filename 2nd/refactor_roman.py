@@ -20,3 +20,6 @@ def to_roman(n: int) -> str:
     return roman_numerals[n - 1]
 
 
+
+if __name__ == '__main__':
+    print(to_roman(int(input("数値を入力して："))))
